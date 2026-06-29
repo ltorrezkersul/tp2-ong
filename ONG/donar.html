@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardianes del Planeta - Nosotros</title>
+    <link rel="icon" href="media/icono ong.png">
+    <link rel="stylesheet" href="ong.css">
+</head>
+
+<body>
+    <div id="inicio"></div>
+    <header>
+        <nav>
+            <button id="abrirMenu" type="button" onclick="abrirMenu()" aria-expanded="false"
+                aria-label="Abrir menu">☰</button>
+            <ul>
+                <li id="logo"><a href="index.html"><img src="media/nombre ong.png" alt="Guardianes del Planeta"
+                            width="130vh"></a></li>
+                <li class="derecha"><a href="donar.html"><b>DONAR</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero-nosotros">
+            <div class="hero-contenido">
+                <h1>Doná hoy y protegé el planeta</h1>
+                <p>
+                    Cada aporte nos ayuda a desarrollar campañas ambientales,
+                    plantar árboles, limpiar espacios naturales y educar a nuevas generaciones.
+                </p>
+                <button class="boton-cta" onclick="abrirModal()">
+                    Donar ahora
+                </button>
+            </div>
+        </section>
+
+        <!-- CALCULADORA -->
+        <section class="seccion-principal">
+            <div class="contenedor">
+                <section class="calculadora">
+                    <h2>Calculá tu impacto</h2>
+                    <p>
+                        Ingresá un monto y descubrí el impacto ambiental de tu donación.
+                    </p>
+                    <div class="calculadora-form">
+                        <input type="number" id="monto" placeholder="Ingresá un monto">
+                        <button class="boton-cta" onclick="calcularImpacto()">
+                            Calcular
+                        </button>
+                    </div>
+                    <div id="resultadoImpacto"></div>
+                </section>
+
+                <!-- CARDS -->
+                <section class="destino-donacion">
+                    <h2>¿En qué usamos las donaciones?</h2>
+                    <div class="cards-donacion">
+                        <article class="card-donacion">
+                            <h3>🌳 Reforestación</h3>
+                            <p>
+                                Plantamos árboles nativos para recuperar espacios verdes.
+                            </p>
+                        </article>
+                        <article class="card-donacion">
+                            <h3>♻️ Limpieza</h3>
+                            <p>
+                                Organizamos jornadas de limpieza en parques, playas y ríos.
+                            </p>
+                        </article>
+                        <article class="card-donacion">
+                            <h3>📚 Educación</h3>
+                            <p>
+                                Realizamos talleres ambientales para escuelas y comunidades.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- ESTADÍSTICAS -->
+                <section class="estadisticas">
+                    <h2>Lo que logramos juntos</h2>
+                    <div class="estadisticas-grid">
+                        <div class="estadistica">
+                            <h3>2.500+</h3>
+                            <p>Árboles plantados</p>
+                        </div>
+                        <div class="estadistica">
+                            <h3>850</h3>
+                            <p>Voluntarios</p>
+                        </div>
+                        <div class="estadistica">
+                            <h3>40</h3>
+                            <p>Campañas ambientales</p>
+                        </div>
+                        <div class="estadistica">
+                            <h3>15.000</h3>
+                            <p>Personas alcanzadas</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL -->
+    <div id="modalDonacion" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <h2>Realizá tu donación</h2>
+            <form onsubmit="enviarDonacion(event)">
+                <div class="form-grupo">
+                    <label>Nombre</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-grupo">
+                    <label>Email</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-grupo">
+                    <label>Monto</label>
+                    <input type="number" required>
+                </div>
+                <div class="form-grupo">
+                    <label>Método de pago</label>
+                    <select>
+                        <option>Seleccioná una opción</option>
+                        <option>Tarjeta</option>
+                        <option>Transferencia</option>
+                        <option>Mercado Pago</option>
+                    </select>
+                </div>
+                <button class="boton-cta" type="submit">
+                    Confirmar donación
+                </button>
+            </form>
+            <div id="mensajeDonacion">
+                ¡Gracias por tu donación! 🌱<br>
+                Juntos estamos construyendo un planeta más verde.
+            </div>
+        </div>
+    </div>
+
+    <a href="#inicio" class="volver-arriba">
+        ⬆ Volver arriba
+    </a>
+
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-col">
+                <h3>Guardianes del Planeta</h3>
+                <p>
+                    Organización ambiental dedicada a proteger la naturaleza
+                    y generar conciencia sobre el cuidado del planeta.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="quéhacemos.html">¿Qué hacemos?</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="donar.html">Donar</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <p>Email: info@guardianesdelplaneta.org</p>
+                <p>Ubicación: Argentina</p>
+                <p>Instagram: @guardianesdelplaneta</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                © 2026 Guardianes del Planeta — Todos los derechos reservados
+            </p>
+        </div>
+    </footer>
+    <script src="ong.js"></script>
+</body>
+
+</html>

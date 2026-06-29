@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardianes del Planeta - Nosotros</title>
+    <link rel="icon" href="media/icono ong.png">
+    <link rel="stylesheet" href="ong.css">
+</head>
+
+<body>
+    <div id="inicio"></div>
+    <header>
+        <nav>
+            <button id="abrirMenu" type="button" onclick="abrirMenu()" aria-expanded="false"
+                aria-label="Abrir menu">☰</button>
+            <ul>
+                <li id="logo"><a href="index.html"><img src="media/nombre ong.png" alt="Guardianes del Planeta"
+                            width="130vh"></a></li>
+                <li class="derecha"><a href="index.html">INICIO</a></li>
+                <li class="derecha"><a href="nosotros.html">NOSOTROS</a></li>
+                <li class="derecha"><a href="quéhacemos.html">¿QUÉ HACEMOS?</a></li>
+                <li class="derecha"><a href="contacto.html">CONTACTO</a></li>
+                <li class="derecha"><a href="donar.html"><b>DONAR</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="hero-nosotros">
+            <div class="hero-contenido">
+                <h1>Contacto</h1>
+                <p>
+                    Estamos para escucharte y ayudarte a formar parte del cambio.
+                </p>
+            </div>
+        </section>
+
+        <section class="seccion-principal">
+            <div class="contenedor">
+                <div class="contacto-grid">
+                    <section class="formulario-contacto">
+                        <h2>Envianos un mensaje</h2>
+                        <form id="form-contacto">
+                            <div class="form-dos-col">
+                                <div class="form-grupo">
+                                    <label>Nombre</label>
+                                    <input type="text" placeholder="Tu nombre" required>
+                                </div>
+                                <div class="form-grupo">
+                                    <label>Apellido</label>
+                                    <input type="text" placeholder="Tu apellido" required>
+                                </div>
+                                <div class="form-grupo">
+                                    <label>Email</label>
+                                    <input type="email" placeholder="tu@email.com" required>
+                                </div>
+                                <div class="form-grupo">
+                                    <label>Teléfono</label>
+                                    <input type="tel" placeholder="+54 11">
+                                </div>
+                                <div class="form-grupo form-full">
+                                    <label>Motivo</label>
+                                    <select>
+                                        <option>Seleccioná una opción</option>
+                                        <option>Quiero ser voluntario/a</option>
+                                        <option>Quiero donar</option>
+                                        <option>Proponer un proyecto</option>
+                                        <option>Otro</option>
+                                    </select>
+                                </div>
+                                <div class="form-grupo form-full">
+                                    <label>Mensaje</label>
+                                    <textarea placeholder="Escribí tu mensaje..." required></textarea>
+                                </div>
+                            </div>
+
+
+                            <button class="boton-cta" type="submit">
+                                Enviar mensaje
+                            </button>
+                        </form>
+                    </section>
+
+
+                    <section class="info-contacto">
+                        <h2>Encontranos</h2>
+                        <div class="info-item">
+                            <h3>📩 Email</h3>
+                            <p>
+                                info@guardianesdelplaneta.org
+                            </p>
+                        </div>
+                        <div class="info-item">
+                            <h3>📍 Ubicación</h3>
+                            <p>
+                                Argentina
+                            </p>
+                        </div>
+                        <div class="info-item">
+                            <h3>🌱 Redes sociales</h3>
+                            <p>
+                                Instagram: @guardianesdelplaneta
+                            </p>
+                            <p>
+                                Facebook: Guardianes del Planeta
+                            </p>
+                        </div>
+                        <div class="info-item">
+                            <h3>🤝 Voluntariado</h3>
+                            <p>
+
+                                Si querés participar en nuestras campañas ambientales,
+                                escribinos y te contamos cómo sumarte.
+
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="#inicio" class="volver-arriba">
+        ⬆ Volver arriba
+    </a>
+
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-col">
+                <h3>Guardianes del Planeta</h3>
+                <p>
+                    Organización ambiental dedicada a la protección de la naturaleza, concientización y acciones
+                    concretas por un planeta más sustentable.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="quéhacemos.html">¿Qué hacemos?</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="donar.html">Donar</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <p>Email: info@guardianesdelplaneta.org</p>
+                <p>Ubicación: Argentina</p>
+                <p>Instagram: @guardianesdelplaneta</p>
+                <p>Twitter: @guardianes_planeta</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Guardianes del Planeta — Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="ong.js"></script>
+</body>
+
+</html>
